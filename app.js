@@ -38,7 +38,7 @@ app.listen(process.env.PORT || 3000, (err) => {
 });
 
 app.get("/", (req, res) => {
-  console.log();
+  res.send("Send GET requests");
 });
 app.get("/get_students", (req, res) => {
   async function getStudent() {
