@@ -1,0 +1,54 @@
+You are fond of backend development and you want to help your college to build the backend for their student database management system.
+
+{
+    "students": [
+        {
+            "name": "User 1",
+            "roll": "200",
+            "courses_enrolled": ["c1", "c2", "c3"],
+            "total_attendance": 100
+        },
+        {
+            "name": "User 2",
+            "roll": "201",
+            "courses_enrolled": ["c2", "c3"],
+            "total_attendance": 50
+        },
+        {
+            "name": "User 3",
+            "roll": "202",
+            "courses_enrolled": ["c1", "c3"],
+            "total_attendance": 75
+        },
+        {
+            "name": "User 4",
+            "roll": "203",
+            "courses_enrolled": [],
+            "total_attendance": 20
+        },
+        {
+            "name": "User 5",
+            "roll": "204",
+            "courses_enrolled": ["c3"],
+            "total_attendance": 30
+        }
+    ]
+}
+
+You are given a JSON object above, and this is to be stored in a MongoDB database. After that you have to design an API using expressJS library of NodeJS, where you have to implement the operations given below:
+
+======================
+API Endpoints required
+======================
+
+/get_students -> It should return a list of all the students studying in the college.
+
+/enrolled_students -> It should return the names of those students who are enrolled in at least one course.
+
+/gg_group -> It should return the names and roll numbers of those students who have attendance <= 30.
+
+/course/x -> In this, let's say x = c1roll number then it will return the s of those students who are enrolled in course c1.
+Example: /course/c1 -> Returns the roll numbers of those students who are enrolled in course c1.
+
+/student/roll -> Here, let's say roll = 200, then it will display the complete details of the student with roll = 200
+Example: /student/200 -> Returns the details of the student with roll = 200
