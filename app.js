@@ -11,9 +11,9 @@ main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(
     "mongodb+srv://" +
-      process.env.userid +
+      process.env.USERID +
       ":" +
-      process.env.DBpass +
+      process.env.DBPASS +
       "@cluster0.ql1k27p.mongodb.net/?retryWrites=true&w=majority"
   );
 
