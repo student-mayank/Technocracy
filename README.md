@@ -14,9 +14,11 @@
 Returns the details of the student with roll = 201
 
 4. https://technocraccy.onrender.com/gg_group
+   
 return the names and roll numbers of those students who have attendance <= 30.
 
 5. https://technocraccy.onrender.com/courses/c1
+   
 let's say x = c1roll number then it will return the s of those students who are enrolled in course c1.
 Example: /course/c1 -> Returns the roll numbers of those students who are enrolled in course c1.
 
