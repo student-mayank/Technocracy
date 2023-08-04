@@ -53,7 +53,7 @@ app.get("/enrolled", (req, res) => {
   async function enrolledStudent() {
     const enrolled = await student.find(
       {
-        course_enrolled: { $not: { $size: 0 } },
+        courses_enrolled: { $ne: [] },
       },
       "name -_id"
     );
